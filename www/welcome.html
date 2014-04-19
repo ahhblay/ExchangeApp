@@ -25,6 +25,14 @@
             function callLoading() {
                 window.location = "index.html";
             }
+        
+            function callSelectAccounts() {
+                window.location = "sendaccounts.html";
+            }
+        
+            function callCamera() {
+                // insert camera plugin code here. 
+            }
         </script>
         
     </head>
@@ -37,14 +45,9 @@
         What would you like to do?</h1>
         
         <div id="actions">
-            <figure>
-                <img id="qrcode" src="img/qrcode.svg" width="60%" /><br />
-                <figcaption>scan code</figcaption>
-            </figure>
-            <figure>
-                <img id="send" src="img/send.svg" width="60%" />
-                <figcaption>send info</figcaption>
-            </figure>
+            <img class="qrcode" onclick="callCamera()" src="img/qrcode.svg" width="45%" />
+            <img class="send" onclick="callSelectAccounts()" src="img/send.svg" width="45%" />
+
         </div>
         
         <div id="bottom-navigation">
